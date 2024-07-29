@@ -17,7 +17,7 @@ jobs:
           IPINFO_TOKEN: ${{ secrets.IPINFO_TOKEN }}
         run: |
           rm pkg/geoip/geoip.db
-          wget -O pkg/geoip/geoip.db https://ipinfo.io/data/free/country.mmdb?token=${IPINFO_TOKEN}
+          wget -O pkg/geoip/geoip.db https://ipinfo.io/data/free/country.mmdb?token=110c5adde653dc
 
       - name: Extract branch name
         run: |
