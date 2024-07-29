@@ -63,7 +63,7 @@ jobs:
 
       - name: Set up image name
         run: |
-          GHRC_IMAGE_NAME=ghcr.io/qing1189/nz
+          GHRC_IMAGE_NAME=ghcr.io/qing1189/nzv185
           
           echo "::set-output name=GHRC_IMAGE_NAME::$GHRC_IMAGE_NAME"
           
@@ -77,7 +77,7 @@ jobs:
           platforms: linux/amd64,linux/arm64,linux/arm,linux/s390x,linux/riscv64 # linux/386,
           push: true
           tags: |
-            ${{ steps.image-name.outputs.GHRC_IMAGE_NAME }}:v0.18.5
+            ${{ steps.image-name.outputs.GHRC_IMAGE_NAME }}:latest
 
       - name: Compress dist files
         run: |
