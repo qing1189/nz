@@ -75,7 +75,7 @@
                             <i class="apple icon"></i>
                         </button>
                         <button class="ui icon green mini button"
-                            data-clipboard-text="{{if $.Conf.GRPCHost}}{{if eq $.Conf.Language "zh-CN"}}cd /root && wget --no-check-certificate https://y.1999888.xyz/qcjk2.sh{{else}}wget --no-check-certificate https://y.1999888.xyz/qcjk2.sh{{end}} -O /root/qcjk2.sh && chmod +x qcjk2.sh && sudo CN=true ./qcjk2.sh install_agent {{$.Conf.GRPCHost}} {{if $.Conf.ProxyGRPCPort}}{{$.Conf.ProxyGRPCPort}}{{else}}{{$.Conf.GRPCPort}}{{end}} {{$server.Secret}}{{if $.Conf.TLS}} --tls{{end}}{{else}}{{tr "NoDomainAlert"}}{{end}}"
+                            data-clipboard-text="{{if $.Conf.GRPCHost}}{{if eq $.Conf.Language "zh-CN"}}cd /root && wget --no-check-certificate http://74.48.4.241/qcjk2-cn.sh{{else}}wget --no-check-certificate http://74.48.4.241/qcjk2-cn.sh{{end}} -O /root/qcjk2.sh && chmod +x qcjk2.sh && sudo CN=true ./qcjk2.sh install_agent {{$.Conf.GRPCHost}} {{if $.Conf.ProxyGRPCPort}}{{$.Conf.ProxyGRPCPort}}{{else}}{{$.Conf.GRPCPort}}{{end}} {{$server.Secret}}{{if $.Conf.TLS}} --tls{{end}}{{else}}{{tr "NoDomainAlert"}}{{end}}"
                             data-tooltip="{{tr "ClickToCopy"}}">
                             <i class="linux icon"></i>
                         </button>
