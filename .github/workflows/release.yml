@@ -21,7 +21,7 @@ jobs:
 
       - name: Extract branch name
         run: |
-          export TAG_NAME=v0.18.5
+          export TAG_NAME=v0.18.14
           echo "tag=$TAG_NAME" >> $GITHUB_OUTPUT
         id: extract_branch
 
@@ -63,7 +63,7 @@ jobs:
 
       - name: Set up image name
         run: |
-          GHRC_IMAGE_NAME=ghcr.io/qing1189/nzv185
+          GHRC_IMAGE_NAME=ghcr.io/qing1189/nzv1814
           
           echo "::set-output name=GHRC_IMAGE_NAME::$GHRC_IMAGE_NAME"
           
